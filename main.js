@@ -61,13 +61,13 @@ function gradingScore(score) {
   // Early return
   // Whatever tiene muchos nombres
   if(score >= 95) return "A+";
-  else if(score >= 90) return "A";
-  else if(score >= 85) return "B+";
-  else if(score >= 80) return "B";
-  else if(score >= 75) return "C+";
-  else if(score >= 70) return "C";
-  else if(score >= 65) return "F+";
-  else return "F";
+  if(score >= 90) return "A";
+  if(score >= 85) return "B+";
+  if(score >= 80) return "B";
+  if(score >= 75) return "C+";
+  if(score >= 70) return "C";
+  if(score >= 65) return "F+";
+  return "F";
   // switch(score){
   //   case 95:
   //     return "A+";
